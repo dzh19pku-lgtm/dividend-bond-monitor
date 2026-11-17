@@ -1,47 +1,16 @@
 {
-  "started_at": "2026-11-17T08:40:50.538623+00:00",
-  "finished_at": "2026-11-17T08:40:59+00:00",
+  "started_at": "2026-11-17T19:41:14.861714+00:00",
+  "finished_at": "2026-11-17T19:41:16+00:00",
   "expected_date": "2026-11-17",
-  "state": "degraded",
-  "sources": {
-    "csi_000922_dp2": {
-      "added": 0,
-      "quarantined": 0,
-      "latest_date": "2026-11-16",
-      "state": "stale_or_quarantined"
-    },
-    "csi_000015_dp2": {
-      "added": 0,
-      "quarantined": 0,
-      "latest_date": "2026-11-16",
-      "state": "stale_or_quarantined"
-    },
-    "csi_000300_dp2": {
-      "added": 0,
-      "quarantined": 0,
-      "latest_date": "2026-11-16",
-      "state": "stale_or_quarantined"
-    },
-    "csi_000905_dp2": {
-      "added": 0,
-      "quarantined": 0,
-      "latest_date": "2026-11-16",
-      "state": "stale_or_quarantined"
-    },
-    "chinabond_cgb_10y": {
-      "added": 0,
-      "quarantined": 0,
-      "latest_date": "2026-11-16",
-      "state": "stale_or_quarantined"
-    }
-  },
+  "state": "skipped_non_session_or_before_close",
+  "sources": {},
   "errors": [],
   "calendar_refresh": {
-    "checked_on": "2026-11-17",
+    "checked_on": "2026-11-18",
     "source": "https://www.sse.com.cn/disclosure/dealinstruc/closed/",
     "state": "unchanged",
     "page_year": "2026",
     "payload_sha256": "4511d76abb438945008cd8b91df2c6a1e94e744c01a826f8e17d53feedb32b5f",
-    "finished_at": "2026-11-17T02:51:13+00:00"
+    "finished_at": "2026-11-17T19:41:16+00:00"
   }
 }
