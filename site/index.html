@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="红利指数股息率与中国10年期国债收益率日频研究看板，来源透明，保留数据可用时间。">
+  <title>息差观察 · 红利股债研究</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.mjs"></script>
+</head>
+<body>
+<aside class="sidebar">
+  <a href="./" class="brand"><span class="brand-icon">∿</span><span>息差观察<small>DIVIDEND / BOND</small></span></a>
+  <div class="side-label">研究标的</div>
+  <nav id="index-nav" aria-label="指数选择"></nav>
+  <div class="side-bottom"><span class="status-dot"></span> 日频研究终端<p>中国 A 股 · CNY<br>北京时间 UTC+8</p><a href="#method">口径与使用说明 ↗</a></div>
+</aside>
+<main>
+  <header><div class="breadcrumb">研究工作台 <span>/</span> 股债收益差</div><div class="header-right"><span id="header-status" class="badge">正在读取数据</span><button id="refresh" class="icon-button" aria-label="重新读取数据">↻</button></div></header>
+  <div class="content">
+    <section class="heading"><div><div class="eyebrow">DIVIDEND YIELD MONITOR</div><h1>红利资产的收益锚</h1><p>观察股息与国债利率之间的距离，追踪相对估值的变化。</p></div><a id="export" class="button" href="#" download>↓ 下载研究数据</a></section>
+    <div id="error" class="notice danger" role="alert" hidden></div>
+    <div id="quality" class="notice" role="status">正在读取本地数据与交易日历…</div>
+    <section class="metrics" aria-label="最新核心指标">
+      <article class="metric primary"><div class="metric-label">股债收益差 <span id="selected-code">—</span></div><div class="metric-value"><span id="spread">—</span><small>百分点</small></div><div class="metric-note">股息率 D/P2 − 10年国债收益率</div><div class="metric-bottom"><span id="selected-name">—</span><span id="data-date">—</span></div></article>
+      <article class="metric"><div class="metric-label">指数股息率 <span class="legend-dot teal"></span></div><div class="metric-value"><span id="dividend">—</span><small>%</small></div><div class="metric-note">中证官方 · D/P2 计算用股本</div><div class="metric-bottom warn">TTM 分红窗口尚未验证</div></article>
+      <article class="metric"><div class="metric-label">10年期国债 <span class="legend-dot gold"></span></div><div class="metric-value"><span id="bond">—</span><small>%</small></div><div class="metric-note">中债国债到期收益率曲线</div><div class="metric-bottom">日终曲线 · 非单只活跃券</div></article>
+      <article class="metric"><div class="metric-label">历史分位 <span>截至当前</span></div><div class="metric-value"><span id="percentile">NA</span><small>%</small></div><div id="percentile-note" class="metric-note">累计有效样本至少 252 日</div><div class="metric-bottom"><span id="sample-count">0 个共同观测日</span></div></article>
+    </section>
+    <section class="panel history-panel">
+      <div class="panel-head"><div><h2>收益率走势</h2><p id="coverage">实际可用历史</p></div><div id="range-buttons" class="segmented" aria-label="历史范围"><button data-years="1">1年</button><button data-years="3">3年</button><button data-years="5">5年</button><button data-years="all" class="active">全部</button></div></div>
+      <div class="chart-legend"><span><i class="legend-dot teal"></i> 股息率 D/P2</span><span><i class="legend-dot gold"></i> 10年国债</span><span class="unit">统一单位：%</span></div>
+      <div class="chart-wrap"><svg id="yield-chart" viewBox="0 0 1000 285" role="img" aria-label="股息率与国债收益率历史对比" tabindex="0"></svg><div class="tooltip" hidden></div></div>
+      <div class="chart-divider"></div><div class="spread-heading"><h3>股债收益差</h3><span>单位：百分点 · 零线表示两者相等</span></div>
+      <div class="chart-wrap"><svg id="spread-chart" viewBox="0 0 1000 190" role="img" aria-label="股债收益差历史走势" tabindex="0"></svg><div class="tooltip" hidden></div></div>
+      <div class="chart-foot"><span>移动鼠标或使用方向键查看日值</span><span>缺失值保留断点，不进行填充</span></div>
+    </section>
+    <section class="lower-grid">
+      <article class="panel stats-panel"><div class="panel-head"><div><h2>历史坐标</h2><p>滚动窗口含当前日 · 样本标准差</p></div><span class="subtle">252 / 756 交易日</span></div>
+        <table class="stats"><thead><tr><th>观察指标</th><th>过去1年</th><th>过去3年</th></tr></thead><tbody><tr><td>利差均值 <small>百分点</small></td><td id="mean-252">NA</td><td id="mean-756">NA</td></tr><tr><td>标准差 <small>百分点</small></td><td id="std-252">NA</td><td id="std-756">NA</td></tr></tbody></table>
+        <div class="stat-pair"><div><span>252日 Z-score</span><strong id="zscore">NA</strong></div><div><span>历史区间位置</span><strong id="position">NA</strong></div></div><p class="small-note">完整交易日窗口不足或窗口内有缺失时显示 NA；历史分位不代表未来收益。</p>
+      </article>
+      <article class="panel decision-panel"><div class="panel-head"><div><h2>下一交易日观察</h2><p>收盘数据 → 晚间获取 → 次日开盘</p></div><span class="outline-badge">观察信号</span></div><div id="decision" class="decision">等待数据校验</div><p id="signal" class="signal">样本不足，暂不判断历史高低位。</p><dl><div><dt>两项数据取得时间</dt><dd id="available-time">—</dd></div><div><dt>保守最早可交易开盘</dt><dd id="trade-open">—</dd></div><div><dt>最近采集完成时间</dt><dd id="updated-time">—</dd></div></dl></article>
+    </section>
+    <section class="panel" id="method"><div class="panel-head"><div><h2>数据与方法</h2><p>清楚区分指标日期、发布时间和可用时间</p></div><span class="outline-badge">可追溯</span></div><div class="method-grid"><div><h3>01 / 口径</h3><p>采用中证官方 D/P2。官方文件明确其为计算用股本口径，但尚未核验分红窗口，因此不标作 TTM。国债严格采用中债国债到期收益率曲线 10 年点。</p></div><div><h3>02 / 时间边界</h3><p>历史发布时间未知。可用时间取成功获得输入的时间；09:00 后取得的数据不用于当天 09:30 开盘。历史回补不等同于当时可获得的数据。</p></div><div><h3>03 / 研究用途</h3><p>利差衡量两种收益率的相对位置，并非可直接锁定的套利收益。没有经验证的买卖规则，不展示交易建议。均值和分位仅使用该行及之前的日期。</p></div></div>
+      <details><summary>查看数据质量与来源详情</summary><div id="source-details"></div><p><a class="button" href="data/chinabond_cgb_10y.csv" download>↓ 下载国债完整已采集历史</a></p></details>
+    </section>
+    <footer><span>息差观察 <span class="footer-divider">/</span> 以可验证数据为起点</span><span id="build-time">本地研究版本</span></footer>
+  </div>
+</main>
+<noscript>请启用 JavaScript 以读取本地数据。也可以直接下载 data/000922.csv。</noscript>
+</body></html>

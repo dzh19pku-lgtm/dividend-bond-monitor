@@ -1,0 +1,271 @@
+{
+  "generated_at": "2026-11-17T08:25:16.071264+00:00",
+  "scope": "daily_monitor_only",
+  "excluded": [
+    "research/",
+    "backtest tools and tests",
+    "local credentials and workspace notes"
+  ],
+  "files": [
+    {
+      "path": ".github/workflows/monitor.yml",
+      "bytes": 4065,
+      "sha256": "776d4fb56ab13aca155d1cadaac95d9f542eaf527d1b95ffb91c676e9952a2ce"
+    },
+    {
+      "path": ".github/workflows/tests.yml",
+      "bytes": 558,
+      "sha256": "c55542b7247f8448c50a3ab325f4919f7f9a07cc0286aff9cf742386567df034"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 166,
+      "sha256": "2e812e963357aef949355a7097f8570c50698c09efa5e9f9cc9760c79d798a5c"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3576,
+      "sha256": "cbc2a29c3708f656365023e995abd36988b92cd6841e911b2a702e11615d22f4"
+    },
+    {
+      "path": "data/calendar.json",
+      "bytes": 536,
+      "sha256": "6d4c98866eeff3ddc30edcfd91c869ef0856a095ad8f288afe0b75dd54a39ca7"
+    },
+    {
+      "path": "data/calendar_refresh.json",
+      "bytes": 283,
+      "sha256": "c8f4a16ab0e9983009b82bea1bc9071d07b54c3a44e432ef2e3377e520963433"
+    },
+    {
+      "path": "data/observations/chinabond_cgb_10y/2006.jsonl",
+      "bytes": 146910,
+      "sha256": "23afe49e528653e941ef1dd1c28b0de60095f8bcfe5bdb616af744563f49e8d0"
+    },
+    {
+      "path": "data/observations/chinabond_cgb_10y/2007.jsonl",
+      "bytes": 171178,
+      "sha256": "5bad294ab1cb844f70a8507ad806699e69d75a9dcbcc50500851b00c1ba339f1"
+    },
+    {
+      "path": "data/observations/chinabond_cgb_10y/2008.jsonl",
+      "bytes": 172645,
+      "sha256": "618a0f1a7d5831745f8491d67f1ea9cc9189f6ea3a21a2823f8c9c18971dcbfb"
+    },
+    {
+      "path": "data/observations/chinabond_cgb_10y/2009.jsonl",
+      "bytes": 171954,
+      "sha256": "9d27a23f867bbe7a0ab13b552cf225dae4da57cb818cc19c4f35b9395d90d2ca"
+    },
+    {
+      "path": "data/observations/chinabond_cgb_10y/2010.jsonl",
+      "bytes": 171961,
+      "sha256": "0c75148f176a5fcfd8883a692dc4f9a6c955caa9c54ddb2ed8cd04d60a9e273c"
+    },
+    {
+      "path": "data/observations/chinabond_cgb_10y/2011.jsonl",
+      "bytes": 171960,
+      "sha256": "8da6a65c1fa9f6b59e63a2c5300b0773d7b45425518e069ba2a98d1f866a6dc9"
+    },
+    {
+      "path": "data/observations/chinabond_cgb_10y/2012.jsonl",
+      "bytes": 171277,
+      "sha256": "aa26fc0e9e8f99d3ca1c7c8e162e92f84c047ebb9b14a1eb2e2d578978e74377"
+    },
+    {
+      "path": "data/observations/chinabond_cgb_10y/2013.jsonl",
+      "bytes": 171977,
+      "sha256": "b82f079484b7bec2c6181d5e114d03ce952ac2a1fabfcf993a8865c8a6163f46"
+    },
+    {
+      "path": "data/observations/chinabond_cgb_10y/2014.jsonl",
+      "bytes": 171971,
+      "sha256": "36b3fe7e01cbaf058d74b2fa0167482e4961c9b3acd4bd37a85c47a13e5b343b"
+    },
+    {
+      "path": "data/observations/chinabond_cgb_10y/2015.jsonl",
+      "bytes": 171267,
+      "sha256": "d302cf7355d0b21d7da4492be3fd817d1557a6d72a86719ca42a95dbfe2662e3"
+    },
+    {
+      "path": "data/observations/chinabond_cgb_10y/2016.jsonl",
+      "bytes": 172657,
+      "sha256": "6625b4c8c184eeca399b7f826b7a6d75f74a2bb18b8747d4c2378024a6c5be21"
+    },
+    {
+      "path": "data/observations/chinabond_cgb_10y/2017.jsonl",
+      "bytes": 172643,
+      "sha256": "6b8962c876fe6368498b719d9b99e8450203b7b6b8e307566f13726fa0a34ad8"
+    },
+    {
+      "path": "data/observations/chinabond_cgb_10y/2018.jsonl",
+      "bytes": 173342,
+      "sha256": "a4c7967451fe421dd3c9146923e3519542f23936ed0a9996b23bab94d12a956a"
+    },
+    {
+      "path": "data/observations/chinabond_cgb_10y/2019.jsonl",
+      "bytes": 171967,
+      "sha256": "6a7b815469b6059251ec7f1e2505d2602cc6cf7d9ec66fecff802b3f1d0d572c"
+    },
+    {
+      "path": "data/observations/chinabond_cgb_10y/2020.jsonl",
+      "bytes": 171263,
+      "sha256": "7f98c0f366251ea4b35dedffd1036c567195e5f02be42b5ccbc2a4e9422d49ad"
+    },
+    {
+      "path": "data/observations/chinabond_cgb_10y/2021.jsonl",
+      "bytes": 171957,
+      "sha256": "2442d43edf9198de8ce362f61e4e1f15ca1ba1f5eab2ebc434027397a032a4c7"
+    },
+    {
+      "path": "data/observations/chinabond_cgb_10y/2022.jsonl",
+      "bytes": 171942,
+      "sha256": "66176f12a3469c2824de82624fca785a145c61ad98ff6088669a1d66ec85469a"
+    },
+    {
+      "path": "data/observations/chinabond_cgb_10y/2023.jsonl",
+      "bytes": 171962,
+      "sha256": "fa1254c71e921ecc9ff1bd67ec9b3ed21f5f82aeb686026fe6b9c6b2a1ca742e"
+    },
+    {
+      "path": "data/observations/chinabond_cgb_10y/2024.jsonl",
+      "bytes": 172665,
+      "sha256": "a1178ba6e3943581dc2f0e4532435ee0cc2d457f3434b0764847c5b0d632e507"
+    },
+    {
+      "path": "data/observations/chinabond_cgb_10y/2025.jsonl",
+      "bytes": 170595,
+      "sha256": "96b1fcae0413b068da27a721a8fc19836d45effb545f9b2dbcf378f69496608f"
+    },
+    {
+      "path": "data/observations/chinabond_cgb_10y/2026.jsonl",
+      "bytes": 147900,
+      "sha256": "4cc49d8f61805df5f87df01a72c2c7cf20e7549fbf452af692e2fe604b396b1b"
+    },
+    {
+      "path": "data/observations/csi_000015_dp2/2026.jsonl",
+      "bytes": 13937,
+      "sha256": "5d9cd611c74b33b4efd7bd2c63d07b2f17218630ecebfcabab9d61a5259121d6"
+    },
+    {
+      "path": "data/observations/csi_000300_dp2/2026.jsonl",
+      "bytes": 13936,
+      "sha256": "2a24a6904a1744a7b5ec627c7ed1607b81e4dca563e9e7a73b32ab05b6022d19"
+    },
+    {
+      "path": "data/observations/csi_000905_dp2/2026.jsonl",
+      "bytes": 13936,
+      "sha256": "fc8f48f97918a0540d20a96d44270d10a728486214e0538c5dd35a4fbf662ceb"
+    },
+    {
+      "path": "data/observations/csi_000922_dp2/2026.jsonl",
+      "bytes": 13937,
+      "sha256": "77c127689a1a3a31498de8c55280a28640e8ea71b9b7d49013ebcb2c2f9bfe15"
+    },
+    {
+      "path": "data/status.json",
+      "bytes": 1179,
+      "sha256": "8f1931c9cc949066179316c7b6513ed6bdc31dbd4b601fc336c8c5f62ac41556"
+    },
+    {
+      "path": "docs/DATA_SOURCES.md",
+      "bytes": 2480,
+      "sha256": "595902949e775c74d50afe28f131ec43f269c4dc2a11fbbb7491146af128362b"
+    },
+    {
+      "path": "docs/GITHUB_DEPLOYMENT.md",
+      "bytes": 6761,
+      "sha256": "c7b6e2f9571555d34bb95bef8ab1492645ebc62e3d2e3d7ea9b6871ec8c71a60"
+    },
+    {
+      "path": "monitor/__init__.py",
+      "bytes": 91,
+      "sha256": "d02602f48c2f7ba32fd0dcc99227226d5820b53a8928a9b6b35ceb6e351a941d"
+    },
+    {
+      "path": "monitor/__main__.py",
+      "bytes": 3301,
+      "sha256": "c4a018fabde496d69e4932b7407c4fa2b6b95303c3cd1a5e6e7cfb0151ae09bb"
+    },
+    {
+      "path": "monitor/analytics.py",
+      "bytes": 4139,
+      "sha256": "e3e501745164552c7bc081857a2c2e602f171f8ee2967799f0e1daf25753634b"
+    },
+    {
+      "path": "monitor/calendar.py",
+      "bytes": 2606,
+      "sha256": "4169d6e883f18ba0452b11e57542a91d0b1a6161ee4c1de74fbf76d55a22f1c1"
+    },
+    {
+      "path": "monitor/calendar_refresh.py",
+      "bytes": 3984,
+      "sha256": "3fa3c5e30ff91822b69ee631b6145730a3afd3db34d6cf9abdf0137d5623808f"
+    },
+    {
+      "path": "monitor/config.py",
+      "bytes": 737,
+      "sha256": "5282db862624ff30c7b806d78aa97ac380f18329cc29509aa0d9e21507d7c60a"
+    },
+    {
+      "path": "monitor/pipeline.py",
+      "bytes": 9508,
+      "sha256": "a5466c83315d07560af0b3539daa0ae48598438a97eef9a6a5c7ade111196841"
+    },
+    {
+      "path": "monitor/sources.py",
+      "bytes": 6149,
+      "sha256": "b8ae094ddc037de4fe249bc95e43e556eafbb415b56476d0521dcd5f5499e1fd"
+    },
+    {
+      "path": "monitor/store.py",
+      "bytes": 6990,
+      "sha256": "bb3a7b3e37692ec80cca4db824e013e51338f33df5e9e7e5ebf5c23ab9958d50"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 55,
+      "sha256": "4db23164153e0f5f4e8a4ec158d1f5defc4e68deeabab0ddf3902feef777cfb7"
+    },
+    {
+      "path": "site/app.mjs",
+      "bytes": 10347,
+      "sha256": "92c5fe2aeb24e5c3d1c5669f261769562faed4519992cd4f3a7d3082078f2898"
+    },
+    {
+      "path": "site/data-utils.mjs",
+      "bytes": 2606,
+      "sha256": "405ab8970a2b1dd61534972f6e871698d08b474d1fe24d3e672009a9b62a674e"
+    },
+    {
+      "path": "site/index.html",
+      "bytes": 7400,
+      "sha256": "69ba93b9bd8d65b498a01548af2fc3fc5d6fc3dd1e495489fc81e57c2d742d38"
+    },
+    {
+      "path": "site/styles.css",
+      "bytes": 9532,
+      "sha256": "da5bd39bf5596c02e9869bbf1e422f0c2479ddc228ed631c8f53c248ae7aab03"
+    },
+    {
+      "path": "tests/fixtures/sse-calendar-2026.html",
+      "bytes": 1802,
+      "sha256": "b490eaf8d2e2d03edcc0a60fa789de0fe1fa986168d9e905bdb09426485ec14d"
+    },
+    {
+      "path": "tests/frontend.test.mjs",
+      "bytes": 2619,
+      "sha256": "1969cf2db73fa09cccc0de6d13f5ed599714eda5214171ed43d207fa59012d4e"
+    },
+    {
+      "path": "tests/test_calendar_refresh.py",
+      "bytes": 2787,
+      "sha256": "9d545d25e0e65abe678e68355f8c82bff7c31c727e906a00f8823da37af08408"
+    },
+    {
+      "path": "tests/test_monitor.py",
+      "bytes": 11809,
+      "sha256": "c4a0872a26e409b8fafd8dd641451f4008712627078f047a701302bf6b72cac0"
+    }
+  ]
+}

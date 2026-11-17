@@ -1,0 +1,11 @@
+__pycache__/
+.pytest_cache/
+.venv/
+.env
+.env.*
+site/data/
+artifacts/
+*.tmp
+data/.update.lock
+# 本发布仓库只维护监控；研究和回测不提交。
+research/
