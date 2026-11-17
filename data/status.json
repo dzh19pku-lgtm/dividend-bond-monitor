@@ -1,29 +1,29 @@
 {
-  "started_at": "2026-11-17T08:40:12.604156+00:00",
-  "finished_at": "2026-11-17T08:40:18+00:00",
+  "started_at": "2026-11-17T08:40:50.538623+00:00",
+  "finished_at": "2026-11-17T08:40:59+00:00",
   "expected_date": "2026-11-17",
   "state": "degraded",
   "sources": {
     "csi_000922_dp2": {
-      "added": 1,
+      "added": 0,
       "quarantined": 0,
       "latest_date": "2026-11-16",
       "state": "stale_or_quarantined"
     },
     "csi_000015_dp2": {
-      "added": 1,
+      "added": 0,
       "quarantined": 0,
       "latest_date": "2026-11-16",
       "state": "stale_or_quarantined"
     },
     "csi_000300_dp2": {
-      "added": 1,
+      "added": 0,
       "quarantined": 0,
       "latest_date": "2026-11-16",
       "state": "stale_or_quarantined"
     },
     "csi_000905_dp2": {
-      "added": 1,
+      "added": 0,
       "quarantined": 0,
       "latest_date": "2026-11-16",
       "state": "stale_or_quarantined"
