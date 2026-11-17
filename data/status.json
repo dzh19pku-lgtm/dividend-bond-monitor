@@ -1,38 +1,38 @@
 {
-  "started_at": "2026-11-17T02:51:12.637760+00:00",
-  "finished_at": "2026-11-17T02:51:20+00:00",
-  "expected_date": "2026-11-16",
-  "state": "current",
+  "started_at": "2026-11-17T08:40:12.604156+00:00",
+  "finished_at": "2026-11-17T08:40:18+00:00",
+  "expected_date": "2026-11-17",
+  "state": "degraded",
   "sources": {
     "csi_000922_dp2": {
-      "added": 0,
+      "added": 1,
       "quarantined": 0,
       "latest_date": "2026-11-16",
-      "state": "current"
+      "state": "stale_or_quarantined"
     },
     "csi_000015_dp2": {
-      "added": 0,
+      "added": 1,
       "quarantined": 0,
       "latest_date": "2026-11-16",
-      "state": "current"
+      "state": "stale_or_quarantined"
     },
     "csi_000300_dp2": {
-      "added": 0,
+      "added": 1,
       "quarantined": 0,
       "latest_date": "2026-11-16",
-      "state": "current"
+      "state": "stale_or_quarantined"
     },
     "csi_000905_dp2": {
-      "added": 0,
+      "added": 1,
       "quarantined": 0,
       "latest_date": "2026-11-16",
-      "state": "current"
+      "state": "stale_or_quarantined"
     },
     "chinabond_cgb_10y": {
       "added": 0,
       "quarantined": 0,
       "latest_date": "2026-11-16",
-      "state": "current"
+      "state": "stale_or_quarantined"
     }
   },
   "errors": [],
