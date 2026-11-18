@@ -1,16 +1,16 @@
 {
-  "started_at": "2026-11-17T21:44:42.892151+00:00",
-  "finished_at": "2026-11-17T21:44:42+00:00",
-  "expected_date": "2026-11-17",
+  "started_at": "2026-11-18T19:17:40.952636+00:00",
+  "finished_at": "2026-11-18T19:17:41+00:00",
+  "expected_date": "2026-11-18",
   "state": "skipped_non_session_or_before_close",
   "sources": {},
   "errors": [],
   "calendar_refresh": {
-    "checked_on": "2026-11-18",
+    "checked_on": "2026-11-19",
     "source": "https://www.sse.com.cn/disclosure/dealinstruc/closed/",
     "state": "unchanged",
     "page_year": "2026",
     "payload_sha256": "4511d76abb438945008cd8b91df2c6a1e94e744c01a826f8e17d53feedb32b5f",
-    "finished_at": "2026-11-17T19:41:16+00:00"
+    "finished_at": "2026-11-18T19:17:41+00:00"
   }
 }
