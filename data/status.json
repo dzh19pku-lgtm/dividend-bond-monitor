@@ -1,6 +1,6 @@
 {
-  "started_at": "2026-11-20T19:00:30.752996+00:00",
-  "finished_at": "2026-11-20T19:00:32+00:00",
+  "started_at": "2026-11-20T20:04:25.848425+00:00",
+  "finished_at": "2026-11-20T20:04:25+00:00",
   "expected_date": "2026-11-20",
   "state": "skipped_non_session_or_before_close",
   "sources": {},
