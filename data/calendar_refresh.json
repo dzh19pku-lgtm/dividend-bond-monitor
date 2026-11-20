@@ -1,8 +1,8 @@
 {
-  "checked_on": "2026-11-20",
+  "checked_on": "2026-11-21",
   "source": "https://www.sse.com.cn/disclosure/dealinstruc/closed/",
   "state": "unchanged",
   "page_year": "2026",
-  "payload_sha256": "4511d76abb438945008cd8b91df2c6a1e94e744c01a826f8e17d53feedb32b5f",
-  "finished_at": "2026-11-19T19:25:37+00:00"
+  "payload_sha256": "1795d06cf7b7581c844eca34075874cbe2ac2c4e73c26a7bf50f1da5b05b5aec",
+  "finished_at": "2026-11-20T19:00:32+00:00"
 }
